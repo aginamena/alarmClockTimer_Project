@@ -1,0 +1,119 @@
+body{
+  max-width: 960px;
+  margin : 0 auto;
+  color : white;
+  background-color: black;
+}
+
+/* current time styling */
+#currentTime{
+  border: 1px solid black;
+  height : 250px;
+  padding : 30px;
+
+}
+#showCurrentTime{
+  font-size: 170px;
+  font-weight : 100;
+  position: relative;
+  left : 120px;
+  top : 30px;
+}
+#currentTimeAmPm{
+  position : relative;
+  font-size: 60px;
+  left : 750px;
+  top : -65px;
+}
+#timeDate{
+  position : relative;
+  top : -280px;
+  left : 745px;
+}
+
+/* alarm clock styling */
+#alarmClock{
+  border: 1px solid black;
+  float : left;
+  width : 49%;
+  height: 400px;
+  /* we don't want the added padding of 30px to be part of the total width
+  of the alarm clock, so we used border-box instead of content box
+  */
+  box-sizing : border-box;
+  padding : 30px;
+}
+#alarmTime{
+  font-size: 70px;
+  width : 100%;
+  position : relative;
+  left : 2px;
+
+  border : none;
+  background-color: black;
+  color : white;
+  font-family: serif;
+}
+#alarmDate{
+  height: 80px;
+  width : 100%;
+  border : none;
+  font-size: 55px;
+  background-color: black;
+  color : white;
+  font-family: serif;
+
+}
+button{
+  width: 90px;
+  height: 30px;
+  font-weight: bold;
+  background-color: yellow;
+}
+#start{
+  cursor : pointer;
+  position: relative;
+  left: 5px;
+  top:30px;
+}
+#stop{
+  cursor : pointer;
+  position: relative;
+  top : 30px;
+  left : 9px;
+}
+
+
+
+/* count down styling */
+#countDown{
+  /* we don't want the added padding of 30px to be part of the total width
+  of the count down, so we used border-box instead of content box
+  */
+  box-sizing: border-box;
+  padding: 30px;
+  height: 400px;
+  border: 1px solid black;
+  width : 51%;
+  float : right;
+}
+#countDownTimer{
+  font-size: 85px;
+  color : red;
+  position: relative;
+  top : 50px;
+}
+#RemainingDays{
+  position: relative;
+  font-weight: bolder;
+  top : 155px;
+}
+
+/*if the screen's size is smaller than 1000px then we want to change its styling */
+
+@media only screen and (max-width: 1000px){
+  #alarmClock, #countDown{
+    float : none;
+    width : 100vw;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html lang = "en">
+    <head>
+      <meta name="viewport" content="width=device-width">
+      <title>Alarm Clock </title>
+       <link href="style.css" rel = "stylesheet">
+    </head>
+    <body>
+      <div id = "currentTime">
+        currentTime
+        <div id = "showCurrentTime"></div>
+        <div id = "currentTimeAmPm"></div>
+        <div id = "timeDate"></div>
+      </div>
+      <div id = "alarmClock">
+        alarmTime
+        <br><br>
+        <label for = "alarmDate" style="color : blue;font-size: 26px;">Date : </label><br>
+        <input type = "date" id = "alarmDate" required><br>
+        <label for = "alarmTime" style = "color : blue; font-size: 26px;">Time :</label>
+        <input id = "alarmTime" type = "time" required>
+        <div id = "errorMessage"></div>
+        <button id = "start">Start</button>
+        <button id = "stop">Stop</button>
+      </div>
+      <div id = "countDown">
+        countDown
+        <div id = "countDownTimer">00:00:00</div>
+        <div id = "RemainingDays">Remaining days = 0</div>
+      </div>
+    </body>
+    <script src ="script.js"></script>
+  </html>
